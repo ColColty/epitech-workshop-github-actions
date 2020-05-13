@@ -7,18 +7,18 @@ on:
     paths:
       - 'src/**'
   pull_request:
-    branches;
+    branches:
       - master
       - develop
     types:
       - opened
       - edited
   schedule:
-    - cron: '* * /1 * * '
+    - cron: '* * /1 * *'
     
 jobs:
   build:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-    - name: Hello, World !
-      run: echo Hello, World !
+    - name: Hello, World date!
+      run: echo "Hello, World ! Today is ${date +"%m-%d-%y %H:%M:%S"}"
