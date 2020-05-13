@@ -21,4 +21,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Hello, World date!
-      run: echo 'Hello, World ! Today is $(date +'%m-%d-%y %H:%M:%S')'
+      run: echo "Hello, World ! Today is $(date +'%m-%d-%y %H:%M:%S')"
