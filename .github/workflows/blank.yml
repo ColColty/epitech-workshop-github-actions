@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'src/**'
+  pull_request:
+    branches;
+      - master
+      - develop
+    types:
+      - opened
+      - edited
+  schedule:
+    - cron: '* * /1 * * '
+    
+jobs:
+  build:
+    runs_on: ubuntu-latest
+    steps:
+    - name: Hello, World !
+      run: echo Hello, World !
