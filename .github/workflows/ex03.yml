@@ -28,7 +28,7 @@ jobs:
         run: lsb_release -rs
   
   windows:
-    runs-on:
+    runs-on: windows-latest
     steps:
       - name: Version
         run: (Get-ComputerInfo).OsHardwareAbstractionLayer
