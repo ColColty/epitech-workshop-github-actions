@@ -14,7 +14,7 @@ on:
       - opened
       - edited
   schedule:
-  - cron: "* * /1 * *"
+  - cron: "* * */1 * *"
     
 jobs:
   build:
