@@ -13,8 +13,8 @@ on:
     types:
       - opened
       - edited
-  schedule:
-  - cron: "* * */1 * *"
+ # schedule:
+ #  - cron: "* * */1 * *"
     
 jobs:
   build:
